@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.idea/
+.env
+*.tgz
+package-lock.json

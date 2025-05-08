@@ -1,0 +1,105 @@
+{"level":"error","message":"BlockChain MCP Server running on stdio mode","timestamp":"2025-05-06T14:21:09.221Z"}
+{"level":"error","message":"BlockChain MCP Server running on stdio mode","timestamp":"2025-05-06T14:45:17.443Z"}
+{"level":"error","message":"BlockChain MCP Server running on stdio mode","timestamp":"2025-05-06T14:46:39.396Z"}
+{"level":"info","message":"Starting sse server","timestamp":"2025-05-06T15:09:15.431Z"}
+{"level":"info","message":"BlockChain MCP SSE Server is running on http://localhost:3001","timestamp":"2025-05-06T15:09:15.441Z"}
+{"level":"info","message":"Starting sse server","timestamp":"2025-05-07T06:41:12.500Z"}
+{"level":"info","message":"BlockChain MCP SSE Server is running on http://localhost:3001","timestamp":"2025-05-07T06:41:12.510Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"1cf9aae1-3f3b-45e9-8105-8b61052e143b","timestamp":"2025-05-07T08:17:09.226Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"1cf9aae1-3f3b-45e9-8105-8b61052e143b","timestamp":"2025-05-07T08:18:29.490Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"fec9723f-5f15-403c-913a-cc4786b3d32d","timestamp":"2025-05-07T08:18:33.128Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"fec9723f-5f15-403c-913a-cc4786b3d32d","timestamp":"2025-05-07T08:20:33.667Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"65f0da6b-ceba-4ccb-9b35-d7ab6f6df0fb","timestamp":"2025-05-07T08:20:39.166Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"65f0da6b-ceba-4ccb-9b35-d7ab6f6df0fb","timestamp":"2025-05-07T08:20:44.466Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"73c91dc2-7967-4372-92ab-fffe5997885c","timestamp":"2025-05-07T08:37:10.855Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"73c91dc2-7967-4372-92ab-fffe5997885c","timestamp":"2025-05-07T08:39:05.940Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"fbe8062d-b623-471d-ab08-52e3969544dd","timestamp":"2025-05-07T08:46:38.034Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"fbe8062d-b623-471d-ab08-52e3969544dd","timestamp":"2025-05-07T08:46:44.271Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"c7355b1e-4195-47bd-81e1-4a89970d8e1f","timestamp":"2025-05-07T08:48:17.616Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"c7355b1e-4195-47bd-81e1-4a89970d8e1f","timestamp":"2025-05-07T08:49:01.875Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"022b7660-7b37-46d9-b2fe-3cb5744f399c","timestamp":"2025-05-07T08:49:03.333Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"022b7660-7b37-46d9-b2fe-3cb5744f399c","timestamp":"2025-05-07T08:51:59.926Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"496bba68-3b03-4245-8a11-f19cf080a3be","timestamp":"2025-05-07T08:52:12.627Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"496bba68-3b03-4245-8a11-f19cf080a3be","timestamp":"2025-05-07T08:52:13.896Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"605fdb20-46ee-48c7-9425-181acbf3f003","timestamp":"2025-05-07T08:54:18.471Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"605fdb20-46ee-48c7-9425-181acbf3f003","timestamp":"2025-05-07T08:54:53.040Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"b1a308a1-e1e9-4d08-a6fd-0d8531156fea","timestamp":"2025-05-07T08:54:55.136Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"b1a308a1-e1e9-4d08-a6fd-0d8531156fea","timestamp":"2025-05-07T08:55:27.261Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"3a48dd56-72b6-4ef8-8e27-c102c6dcda63","timestamp":"2025-05-07T08:55:28.856Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"3a48dd56-72b6-4ef8-8e27-c102c6dcda63","timestamp":"2025-05-07T08:55:39.808Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"425332ac-95f9-4423-97bb-2fa77cdd05c4","timestamp":"2025-05-07T08:55:41.189Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"425332ac-95f9-4423-97bb-2fa77cdd05c4","timestamp":"2025-05-07T08:57:24.607Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"36453359-6d28-45f2-82f0-e544f7f1a721","timestamp":"2025-05-07T08:57:25.987Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"36453359-6d28-45f2-82f0-e544f7f1a721","timestamp":"2025-05-07T08:57:55.229Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"00545c92-5101-42bd-a517-20b935e1a3a1","timestamp":"2025-05-07T08:57:57.063Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"00545c92-5101-42bd-a517-20b935e1a3a1","timestamp":"2025-05-07T09:03:02.475Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"fd0da5eb-2c97-473d-a700-9dd702cab43d","timestamp":"2025-05-07T09:03:05.471Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"fd0da5eb-2c97-473d-a700-9dd702cab43d","timestamp":"2025-05-07T09:08:10.457Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"03c9c28c-0ab2-447a-8bb9-6cff3882ef72","timestamp":"2025-05-07T09:08:13.476Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"03c9c28c-0ab2-447a-8bb9-6cff3882ef72","timestamp":"2025-05-07T09:10:43.005Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"dd71e7a2-5d90-4281-aa9d-33976712bd13","timestamp":"2025-05-07T09:10:45.560Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"dd71e7a2-5d90-4281-aa9d-33976712bd13","timestamp":"2025-05-07T09:11:07.393Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"95d4ac40-1cce-4f01-8adf-d81dbea23e9d","timestamp":"2025-05-07T09:11:09.460Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"95d4ac40-1cce-4f01-8adf-d81dbea23e9d","timestamp":"2025-05-07T09:11:19.167Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"f46e0f03-06b0-4f11-a3f2-683dfe040e43","timestamp":"2025-05-07T09:11:20.751Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"f46e0f03-06b0-4f11-a3f2-683dfe040e43","timestamp":"2025-05-07T09:14:23.463Z"}
+{"level":"info","message":"Starting sse server","timestamp":"2025-05-07T09:14:27.881Z"}
+{"level":"info","message":"BlockChain MCP SSE Server is running on http://localhost:3001","timestamp":"2025-05-07T09:14:27.890Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"84d0532c-ddd7-4dee-8991-e361023a9e92","timestamp":"2025-05-07T09:14:29.502Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"84d0532c-ddd7-4dee-8991-e361023a9e92","timestamp":"2025-05-07T09:14:41.342Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"5e0fe6b4-0ac4-4200-8060-40e3bd4ca922","timestamp":"2025-05-07T09:14:58.487Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"5e0fe6b4-0ac4-4200-8060-40e3bd4ca922","timestamp":"2025-05-07T09:16:00.996Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"3c44fdeb-16da-4fd1-b6bc-82d41e5b6f9c","timestamp":"2025-05-07T09:16:02.407Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"3c44fdeb-16da-4fd1-b6bc-82d41e5b6f9c","timestamp":"2025-05-07T09:18:39.502Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"dc1b3a44-d41c-4ec1-81ae-15915b6614bb","timestamp":"2025-05-07T09:18:41.102Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"dc1b3a44-d41c-4ec1-81ae-15915b6614bb","timestamp":"2025-05-07T13:54:25.547Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"1fe66015-1578-42f0-80e3-cfd0266579dc","timestamp":"2025-05-07T13:54:29.326Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"1fe66015-1578-42f0-80e3-cfd0266579dc","timestamp":"2025-05-07T13:59:33.974Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"0c29b7c2-efe0-48a4-b1a7-ad1e7488adac","timestamp":"2025-05-07T13:59:37.009Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"0c29b7c2-efe0-48a4-b1a7-ad1e7488adac","timestamp":"2025-05-07T14:04:41.971Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"0a0579ac-875e-4eb7-b4b2-6dd9ba634fd2","timestamp":"2025-05-07T14:04:44.986Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"0a0579ac-875e-4eb7-b4b2-6dd9ba634fd2","timestamp":"2025-05-07T14:09:50.377Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"d8695592-0cb0-4a0d-b94d-a1ce8787547a","timestamp":"2025-05-07T14:09:53.386Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"d8695592-0cb0-4a0d-b94d-a1ce8787547a","timestamp":"2025-05-07T14:14:58.212Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"bec1dbbc-90df-49a2-af3f-a679d332d0e2","timestamp":"2025-05-07T14:15:01.235Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"bec1dbbc-90df-49a2-af3f-a679d332d0e2","timestamp":"2025-05-07T14:20:05.716Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"bab4092b-b1d6-4b60-aef2-5e3b328475d6","timestamp":"2025-05-07T14:20:08.736Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"bab4092b-b1d6-4b60-aef2-5e3b328475d6","timestamp":"2025-05-08T01:32:09.098Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"990f1024-601f-411b-8e13-1becd49037cf","timestamp":"2025-05-08T01:32:12.120Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"990f1024-601f-411b-8e13-1becd49037cf","timestamp":"2025-05-08T01:37:16.680Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"1ef6dd6e-c966-4483-b99a-587c0d3c4a8a","timestamp":"2025-05-08T01:37:19.690Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"1ef6dd6e-c966-4483-b99a-587c0d3c4a8a","timestamp":"2025-05-08T01:42:25.969Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"ff931e23-1dd7-4b3a-8e80-c8281f7a764f","timestamp":"2025-05-08T01:42:28.997Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"ff931e23-1dd7-4b3a-8e80-c8281f7a764f","timestamp":"2025-05-08T01:47:35.070Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"5d2157aa-e180-4521-85e2-4397f7e042f6","timestamp":"2025-05-08T01:47:38.081Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"5d2157aa-e180-4521-85e2-4397f7e042f6","timestamp":"2025-05-08T01:52:43.176Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"3c3887d2-fcad-4808-8a62-2db9335c3b30","timestamp":"2025-05-08T01:52:46.200Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"3c3887d2-fcad-4808-8a62-2db9335c3b30","timestamp":"2025-05-08T01:57:50.286Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"890b4a25-2c5d-4b3a-b9ea-c314375074ce","timestamp":"2025-05-08T01:57:53.285Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"890b4a25-2c5d-4b3a-b9ea-c314375074ce","timestamp":"2025-05-08T02:02:59.415Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"6416b470-1d67-4ad9-a45a-db1e99482887","timestamp":"2025-05-08T02:03:02.438Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"6416b470-1d67-4ad9-a45a-db1e99482887","timestamp":"2025-05-08T02:08:08.794Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"75239ebc-d580-4f8f-94d7-c9076075b6d6","timestamp":"2025-05-08T02:08:11.822Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"75239ebc-d580-4f8f-94d7-c9076075b6d6","timestamp":"2025-05-08T02:13:18.204Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"9c26cc9e-a905-4559-ab0f-8de00354e8e6","timestamp":"2025-05-08T02:13:21.218Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"9c26cc9e-a905-4559-ab0f-8de00354e8e6","timestamp":"2025-05-08T02:18:26.150Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"8710a4bc-1fc8-41f4-81ea-94a404948423","timestamp":"2025-05-08T02:18:29.150Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"8710a4bc-1fc8-41f4-81ea-94a404948423","timestamp":"2025-05-08T02:23:34.647Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"ec553500-5738-4e13-ad50-37586b001ed5","timestamp":"2025-05-08T02:23:37.654Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"ec553500-5738-4e13-ad50-37586b001ed5","timestamp":"2025-05-08T02:28:43.142Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"a91d3c23-6111-4772-87e2-e81da7d09b0b","timestamp":"2025-05-08T02:28:46.152Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"a91d3c23-6111-4772-87e2-e81da7d09b0b","timestamp":"2025-05-08T02:33:52.306Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"3d2a24cf-6e59-4550-a48e-f100b534f356","timestamp":"2025-05-08T02:33:55.323Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"3d2a24cf-6e59-4550-a48e-f100b534f356","timestamp":"2025-05-08T02:39:01.054Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"6c6b08ef-eed0-40bb-ae53-0c02e379e801","timestamp":"2025-05-08T02:39:04.069Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"6c6b08ef-eed0-40bb-ae53-0c02e379e801","timestamp":"2025-05-08T02:44:09.413Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"9a6d4307-9b8a-413a-950f-f1d9b67d5d0b","timestamp":"2025-05-08T02:44:12.429Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"9a6d4307-9b8a-413a-950f-f1d9b67d5d0b","timestamp":"2025-05-08T02:49:18.120Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"fe88fd73-4cac-403a-ab41-2b76ee471327","timestamp":"2025-05-08T02:49:21.128Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"fe88fd73-4cac-403a-ab41-2b76ee471327","timestamp":"2025-05-08T02:54:27.073Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"a2532e74-2c58-4726-8131-1ba8edc7a1dc","timestamp":"2025-05-08T02:54:30.083Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"a2532e74-2c58-4726-8131-1ba8edc7a1dc","timestamp":"2025-05-08T02:58:12.316Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"1084e081-309a-4eee-98b2-569e73253227","timestamp":"2025-05-08T04:12:41.432Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"1084e081-309a-4eee-98b2-569e73253227","timestamp":"2025-05-08T04:14:39.937Z"}
+{"level":"info","message":"New SSE connection established","sessionId":"0b3cbdfd-3198-449f-9abc-7766f52e0a6d","timestamp":"2025-05-08T04:14:42.214Z"}
+{"level":"info","message":"SSE connection closed","sessionId":"0b3cbdfd-3198-449f-9abc-7766f52e0a6d","timestamp":"2025-05-08T04:14:43.507Z"}
