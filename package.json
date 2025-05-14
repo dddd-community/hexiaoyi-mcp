@@ -10,7 +10,6 @@
     "build": "bun build src/*.ts --outdir dist --target node --format cjs",
     "test": "npx @modelcontextprotocol/inspector bun dev",
     "e2e": "LOGLEVEL=debug bun test e2e --coverage --timeout 50000",
-    "prepare": "husky",
     "format": "prettier --write ."
   },
   "main": "dist/index.js",
@@ -43,7 +42,6 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.0.0",
-    "husky": "^9.1.7",
     "prettier": "3.2.4",
     "typescript": "^5.0.0"
   },
