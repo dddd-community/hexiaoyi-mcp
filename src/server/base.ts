@@ -9,7 +9,7 @@ export const startServer = () => {
   try {
     // Create a new MCP server instance
     const server = new McpServer({
-      name: "BNBChain MCP Server",
+      name: "hexiaoyi MCP Server",
       version: "1.0.0"
     })
 

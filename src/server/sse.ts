@@ -64,11 +64,11 @@ export const startSSEServer = async () => {
     const PORT = process.env.PORT || 3001
     app.listen(PORT, () => {
       Logger.info(
-        `BNBChain MCP SSE Server is running on http://localhost:${PORT}`
+        `hexiaoyi MCP SSE Server is running on http://localhost:${PORT}`
       )
     })
     return server
   } catch (error) {
-    Logger.error("Error starting BNBChain MCP SSE Server:", error)
+    Logger.error("Error starting hexiaoyi MCP SSE Server:", error)
   }
 }
