@@ -43,11 +43,11 @@ class CMCHelper {
       if (data && data.data) {
         return data.data;
       } else {
-        console.warn('未找到代币价格信息');
+        console.warn('token info not found');
         return null;
       }
     } catch (error: any) {
-      console.error('获取代币价格信息时出错：', error.message);
+      console.error('get token info price error：', error.message);
       return null;
     }
   }
