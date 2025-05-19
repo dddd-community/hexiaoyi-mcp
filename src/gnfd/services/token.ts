@@ -1,6 +1,5 @@
-import CMCHelper from "@/utils/cmc_helper.ts"
+import {cmcHelperInstance} from "@/utils/cmc_helper.ts"
 
-export const getTokenPrice = async ( contractAddress: string) => {
-  const cmcHelper = new CMCHelper("")
-  return cmcHelper.getTokenPriceByContractAddress(contractAddress,56)
+export const getTokenPriceByCMC = async ( contractAddress: string,networkId: number) => {
+  return cmcHelperInstance.getTokenPriceByContractAddress(contractAddress,networkId)
 }
