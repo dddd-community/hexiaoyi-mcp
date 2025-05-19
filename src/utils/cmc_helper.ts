@@ -30,7 +30,7 @@ class CMCHelper {
   public async getTokenPriceByContractAddress(
     contractAddress: string,
     networkId: number
-  ): Promise<number | null> {
+  ): Promise<any> {
     this.initClient();
     try {
       const response = await this.client!.get('/v4/dex/pairs/quotes/latest', {

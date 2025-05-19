@@ -7,6 +7,7 @@ import type { Request, Response } from "express"
 
 import Logger from "@/utils/logger"
 import { startServer } from "./base"
+import {cmcHelperInstance} from "@/utils/cmc_helper.ts"
 
 export const startSSEServer = async () => {
   try {
@@ -61,12 +62,26 @@ export const startSSEServer = async () => {
       }
     })
 
+    const intervalId = setInterval(async () => {
+      const tokenPrice = await cmcHelperInstance.getTokenPriceByContractAddress("0x422cbee1289aae4422edd8ff56f6578701bb2878",56);
+      if (tokenPrice !== null) {
+        Object.values(transports).forEach((transport) => {
+          transport.send({ jsonrpc: "2.0", method: "ddddd_call", params: {"type":"getPrice","data":tokenPrice},id: Date.now()});
+        });
+      }
+    }, 20000);
+
     const PORT = process.env.PORT || 3001
-    app.listen(PORT, () => {
+    const expressServer = app.listen(PORT, () => {
       Logger.info(
         `hexiaoyi MCP SSE Server is running on http://localhost:${PORT}`
       )
     })
+
+    expressServer.on('close', () => {
+      clearInterval(intervalId);
+    });
+
     return server
   } catch (error) {
     Logger.error("Error starting hexiaoyi MCP SSE Server:", error)
