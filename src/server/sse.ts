@@ -69,7 +69,7 @@ export const startSSEServer = async () => {
           transport.send({ jsonrpc: "2.0", method: "dddd_call", params: {"type":"getPrice","data":tokenPrice},id: Date.now()});
         });
       }
-    }, 20000);
+    }, 30000);
 
     const PORT = process.env.PORT || 3001
     const expressServer = app.listen(PORT, () => {
