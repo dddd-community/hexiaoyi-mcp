@@ -56,7 +56,7 @@ class CMCHelper {
 
 let cmcApiKey = process.env.CMC_API_KEY;
 if (!cmcApiKey) {
-  console.error('CMC_API_KEY is not defined in environment variables');
+  console.error('CMC_API_KEY is undefined in environment variables');
   cmcApiKey="";
 }
 
