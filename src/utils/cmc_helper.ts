@@ -43,15 +43,36 @@ class CMCHelper {
       if (data && data.data) {
         return data.data;
       } else {
-        console.warn('token info not found');
+        console.warn('get token price by contract address:price info not found');
         return null;
       }
     } catch (error: any) {
-      console.error('get token info price error：', error.message);
+      console.error('get token price by contract address error:', error.message);
       return null;
     }
   }
 
+  public async getTokenPriceBySymbol(symbol: string): Promise<any> {
+    this.initClient();
+    try {
+      const response = await this.client!.get('/v1/cryptocurrency/quotes/latest', {
+        params: {
+          symbol,
+          convert: 'USD',
+        },
+      });
+      const data = response.data;
+      if (data && data.data) {
+        return data.data;
+      } else {
+        console.warn('get token price by symbol:price info not found');
+        return null;
+      }
+    } catch (error: any) {
+      console.error('get token price by symbol error:', error.message);
+      return null;
+    }
+  }
 }
 
 let cmcApiKey = process.env.CMC_API_KEY;
