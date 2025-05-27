@@ -16,7 +16,7 @@ export const startSSEServer = async () => {
     app.use(cors())
 
     // Log the current log level on startup
-    Logger.info(`Starting sse server with log level: ${Logger.getLevel()}`)
+    Logger.info(`starting sse server with log level: ${Logger.getLevel()}`)
 
     // to support multiple simultaneous connections we have a lookup object from
     // sessionId to transport
@@ -25,19 +25,19 @@ export const startSSEServer = async () => {
     app.get("/sse", async (_: Request, res: Response) => {
       const transport = new SSEServerTransport("/messages", res)
       transports[transport.sessionId] = transport
-      Logger.info("New SSE connection established", {
+      Logger.info("new sse connection established", {
         sessionId: transport.sessionId
       })
 
       res.on("close", () => {
-        Logger.info("SSE connection closed", { sessionId: transport.sessionId })
+        Logger.info("sse connection closed", { sessionId: transport.sessionId })
         delete transports[transport.sessionId]
       })
 
       try {
         await server.connect(transport)
       } catch (error) {
-        Logger.error("Error connecting transport", {
+        Logger.error("error connecting transport", {
           sessionId: transport.sessionId,
           error
         })
@@ -49,16 +49,16 @@ export const startSSEServer = async () => {
       const transport = transports[sessionId]
 
       if (transport) {
-        Logger.debug("Handling message", { sessionId, body: req.body })
+        Logger.debug("handling message", { sessionId, body: req.body })
         try {
           await transport.handlePostMessage(req, res, req.body)
         } catch (error) {
-          Logger.error("Error handling message", { sessionId, error })
-          res.status(500).send("Internal server error")
+          Logger.error("error handling message", { sessionId, error })
+          res.status(500).send("internal server error")
         }
       } else {
-        Logger.warn("No transport found for session", { sessionId })
-        res.status(400).send("No transport found for sessionId")
+        Logger.warn("no transport found for session", { sessionId })
+        res.status(400).send("no transport found for sessionId")
       }
     })
 
@@ -74,7 +74,7 @@ export const startSSEServer = async () => {
     const PORT = process.env.PORT || 3001
     const expressServer = app.listen(PORT, () => {
       Logger.info(
-        `hexiaoyi MCP SSE Server is running on http://localhost:${PORT}`
+        `hexiaoyi mcp sse server is running on http://localhost:${PORT}`
       )
     })
 
@@ -84,6 +84,6 @@ export const startSSEServer = async () => {
 
     return server
   } catch (error) {
-    Logger.error("Error starting hexiaoyi MCP SSE Server:", error)
+    Logger.error("start hexiaoyi mcp sse server error:", error)
   }
 }
