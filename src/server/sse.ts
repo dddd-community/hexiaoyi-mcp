@@ -58,7 +58,7 @@ export const startSSEServer = async () => {
         }
       } else {
         Logger.warn("no transport found for session", { sessionId })
-        res.status(400).send("no transport found for sessionId")
+        res.status(400).send("no transport found for session id")
       }
     })
 
@@ -66,7 +66,7 @@ export const startSSEServer = async () => {
       const tokenPrice = await cmcHelperInstance.getTokenPriceByContractAddress("0x422cbee1289aae4422edd8ff56f6578701bb2878",56);
       if (tokenPrice !== null) {
         Object.values(transports).forEach((transport) => {
-          transport.send({ jsonrpc: "2.0", method: "dddd_call", params: {"type":"getPrice","data":tokenPrice},id: Date.now()});
+          transport.send({ jsonrpc: "2.0", method: "dddd_call", params: {"type":"get_price","data":tokenPrice},id: Date.now()});
         });
       }
     }, 30000);
