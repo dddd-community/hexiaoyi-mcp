@@ -9,7 +9,7 @@ export const startServer = () => {
   try {
     // Create a new MCP server instance
     const server = new McpServer({
-      name: "hexiaoyi MCP Server",
+      name: "hexiaoyi mcp Server",
       version: "1.0.0"
     })
 
@@ -18,7 +18,7 @@ export const startServer = () => {
     registerGnfd(server)
     return server
   } catch (error) {
-    Logger.error("Failed to initialize server:", error)
+    Logger.error("failed to initialize server:", error)
     process.exit(1)
   }
 }
