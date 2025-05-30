@@ -57,7 +57,7 @@ class CMCHelper {
     try {
       const response = await this.client!.get('/v1/cryptocurrency/quotes/latest', {
         params: {
-          symbol,
+          slug:symbol,
           convert: 'USD',
         },
       });

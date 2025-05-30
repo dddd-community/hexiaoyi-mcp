@@ -63,7 +63,8 @@ export const startSSEServer = async () => {
     })
 
     const intervalId = setInterval(async () => {
-      const tokenPrice = await cmcHelperInstance.getTokenPriceByContractAddress("0x422cbee1289aae4422edd8ff56f6578701bb2878",56);
+      // const tokenPrice = await cmcHelperInstance.getTokenPriceByContractAddress("0x422cbee1289aae4422edd8ff56f6578701bb2878",56);
+      const tokenPrice = await cmcHelperInstance.getTokenPriceBySymbol("dddd");
       if (tokenPrice !== null) {
         Object.values(transports).forEach((transport) => {
           transport.send({ jsonrpc: "2.0", method: "dddd_call", params: {"type":"get_price","data":tokenPrice},id: Date.now()});
