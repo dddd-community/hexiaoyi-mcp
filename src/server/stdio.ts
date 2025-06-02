@@ -11,7 +11,7 @@ export const startStdioServer = async () => {
     const server = startServer()
     const transport = new StdioServerTransport()
     // using error level to show the message for stdio mode
-    Logger.error("hexiaoyi mcp Server running on stdio mode")
+    Logger.error("hexiaoyi mcp server running on stdio mode")
 
     transport.onmessage = (message) => {
       Logger.error("received message:", message)
@@ -26,6 +26,6 @@ export const startStdioServer = async () => {
     await server.connect(transport)
     return server
   } catch (error) {
-    Logger.error("error starting BNBChain mcp Stdio server:", error)
+    Logger.error("error starting mcp stdio server:", error)
   }
 }
