@@ -24,8 +24,8 @@ export const safeStringify = (value: any, space?: number): string => {
     return JSON.stringify(value, bigIntReplacer, space)
   } catch (error) {
     // If there's still an error, return a fallback string
-    console.error("Error in safeStringify:", error)
-    return JSON.stringify({ error: "Unable to stringify value" })
+    console.error("error in safe stringify:", error)
+    return JSON.stringify({ error: "unable to stringify value" })
   }
 }
 
@@ -38,7 +38,7 @@ export const safeParse = (text: string): any => {
   try {
     return JSON.parse(text)
   } catch (error) {
-    console.error("Error in safeParse:", error)
+    console.error("error in safe parse:", error)
     return null
   }
 }
@@ -50,7 +50,7 @@ export const mcpToolRes = {
       content: [
         {
           type: "text" as const,
-          text: `Error ${operation}: ${error instanceof Error ? error.message : String(error)}`
+          text: `error ${operation}: ${error instanceof Error ? error.message : String(error)}`
         }
       ]
     }
