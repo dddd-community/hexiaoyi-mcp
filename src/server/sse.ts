@@ -75,7 +75,7 @@ export const startSSEServer = async () => {
     const PORT = process.env.PORT || 3001
     const expressServer = app.listen(PORT, () => {
       Logger.info(
-        `hexiaoyi mcp sse server is running on http://localhost:${PORT}`
+        `he xiao yi mcp sse server is running on http://localhost:${PORT}`
       )
     })
 
@@ -85,6 +85,6 @@ export const startSSEServer = async () => {
 
     return server
   } catch (error) {
-    Logger.error("start hexiaoyi mcp sse server error:", error)
+    Logger.error("start he xiao yi mcp sse server error:", error)
   }
 }
