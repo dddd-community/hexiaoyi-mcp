@@ -48,7 +48,7 @@ export function registerStorageTools(server: McpServer) {
       network,
       privateKey,
       filePath,
-      bucketName = "created-by-bnbchain-mcp"
+      bucketName = "created-by-hexiaoyi-mcp"
     }) => {
       try {
         // Ensure absolute path is used
@@ -78,8 +78,8 @@ export function registerStorageTools(server: McpServer) {
       folderName: z
         .string()
         .optional()
-        .default("created-by-bnbchain-mcp")
-        .describe("Optional folder name. Default is 'created-by-bnbchain-mcp'"),
+        .default("created-by-hexiaoyi-mcp")
+        .describe("Optional folder name. Default is 'created-by-hexiaoyi-mcp'"),
       bucketName: bucketNameParam
     },
     async ({ network, privateKey, folderName, bucketName }) => {

@@ -22,7 +22,7 @@ export const privateKeyParam = z
 export const bucketNameParam = z
   .string()
   .optional()
-  .default("created-by-bnbchain-mcp")
+  .default("created-by-hexiaoyi-mcp")
   .describe(
-    "The bucket name to use. If not provided, will use default 'created-by-bnbchain-mcp'"
+    "The bucket name to use. If not provided, will use default 'created-by-hexiaoyi-mcp'"
   )

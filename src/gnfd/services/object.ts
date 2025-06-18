@@ -169,7 +169,7 @@ export const createFolder = async (
   }
 ): Promise<ApiResponse<{ bucketName: string; folderName: string }>> => {
   try {
-    const _folderName = folderName || "created-by-bnbchain-mcp"
+    const _folderName = folderName || "created-by-hexiaoyi-mcp"
 
     // Get or create bucket
     const bucketNameRes = await createBucket(network, {

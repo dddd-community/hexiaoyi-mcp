@@ -104,7 +104,7 @@ export const createBucket = async (
   const client = getClient(network)
   const account = await getAccount(network, privateKey)
 
-  const _bucketName = bucketName || "created-by-bnbchain-mcp"
+  const _bucketName = bucketName || "created-by-hexiaoyi-mcp"
 
   try {
     // Try to check if the bucket already exists
