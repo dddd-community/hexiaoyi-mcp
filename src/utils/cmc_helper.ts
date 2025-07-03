@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
 class CMCHelper {
-  private apiKey: string;
+  private readonly apiKey: string;
   private client: AxiosInstance | null = null;
   private baseURL: string = 'https://pro-api.coinmarketcap.com';
 
