@@ -1,6 +1,6 @@
 import { formatUnits, getContract, parseUnits, type Address } from "viem"
 
-import Logger from "@/utils/logger.js"
+import Logger_util from "@/utils/logger_util.js"
 import { ERC20_ABI, ERC20_BYTECODE } from "./abi/erc20.js"
 import { ERC721_ABI } from "./abi/erc721.js"
 import { ERC1155_ABI } from "./abi/erc1155.js"
@@ -169,7 +169,7 @@ export const createERC20Token = async ({
     chain: client.chain
   })
 
-  Logger.info(`Deployed new ERC20 token (${name} - ${symbol}): ${hash}`)
+  Logger_util.info(`Deployed new ERC20 token (${name} - ${symbol}): ${hash}`)
   return {
     hash,
     name,

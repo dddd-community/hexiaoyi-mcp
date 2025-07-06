@@ -2,7 +2,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 
 import { registerEVM } from "@/evm/index.js"
 import { registerGnfd } from "@/gnfd/index.js"
-import Logger from "@/utils/logger.js"
+import Logger_util from "@/utils/logger_util.js"
 
 // Create and start the MCP server
 export const startServer = () => {
@@ -18,7 +18,7 @@ export const startServer = () => {
     registerGnfd(server)
     return server
   } catch (error) {
-    Logger.error("failed to initialize server:", error)
+    Logger_util.error("failed to initialize server:", error)
     process.exit(1)
   }
 }

@@ -2,7 +2,7 @@ import { IQuotaProps, Long, VisibilityType } from "@bnb-chain/greenfield-js-sdk"
 import { BucketInfo } from "@bnb-chain/greenfield-js-sdk/dist/esm/types/sp/Common"
 import type { Hex } from "viem"
 
-import Logger from "@/utils/logger"
+import Logger_util from "@/utils/logger_util.ts"
 import { ApiResponse, response } from "../util"
 import { getAccount } from "./account"
 import { getClient } from "./client"
@@ -23,7 +23,7 @@ export const getBucketInfo = async (
     const res = await client.bucket.headBucket(bucketName)
     return response.success(res.bucketInfo as {} as BucketInfo)
   } catch (error) {
-    Logger.error(`Get bucket info operation failed: ${error}`)
+    Logger_util.error(`Get bucket info operation failed: ${error}`)
     return response.fail(`Get bucket info operation failed: ${error}`)
   }
 }
@@ -83,7 +83,7 @@ export const getBucketFullInfo = async (
       return response.fail("Get bucket full info operation failed")
     }
   } catch (error) {
-    Logger.error(`Get bucket full info operation failed: ${error}`)
+    Logger_util.error(`Get bucket full info operation failed: ${error}`)
     return response.fail(`Get bucket full info operation failed: ${error}`)
   }
 }
@@ -111,16 +111,16 @@ export const createBucket = async (
     try {
       await client.bucket.headBucket(_bucketName)
       // If no error is thrown, the bucket exists
-      Logger.debug(`Bucket ${_bucketName} already exists`)
+      Logger_util.debug(`Bucket ${_bucketName} already exists`)
       return response.success({ bucketName: _bucketName })
     } catch (error) {
       // Bucket doesn't exist, proceed to create
-      Logger.debug(`Bucket ${_bucketName} does not exist, creating...`)
+      Logger_util.debug(`Bucket ${_bucketName} does not exist, creating...`)
     }
 
     const spInfo = await selectSp(network)
 
-    Logger.debug(`Creating bucket: ${_bucketName}, creator: ${account.address}`)
+    Logger_util.debug(`Creating bucket: ${_bucketName}, creator: ${account.address}`)
     const createBucketTx = await client.bucket.createBucket({
       bucketName: _bucketName,
       creator: account.address,
@@ -168,7 +168,7 @@ export const deleteBucket = async (
     try {
       await client.bucket.headBucket(bucketName)
     } catch (error) {
-      Logger.error(`Bucket ${bucketName} does not exist`)
+      Logger_util.error(`Bucket ${bucketName} does not exist`)
       return response.fail(`Bucket ${bucketName} does not exist`)
     }
 
@@ -189,7 +189,7 @@ export const deleteBucket = async (
     // Simply return the transaction result
     return txResult
   } catch (error) {
-    Logger.error(`Delete bucket operation failed: ${error}`)
+    Logger_util.error(`Delete bucket operation failed: ${error}`)
     return response.fail(`Delete bucket operation failed: ${error}`)
   }
 }
@@ -242,7 +242,7 @@ export const listBuckets = async (
 
     return response.success({ buckets: bucketsWithInfo })
   } catch (error) {
-    Logger.error(`List buckets operation failed: ${error}`)
+    Logger_util.error(`List buckets operation failed: ${error}`)
     return response.fail(`List buckets operation failed: ${error}`)
   }
 }

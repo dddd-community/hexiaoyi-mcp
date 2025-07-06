@@ -9,8 +9,8 @@ enum LogLevel {
 
 type LogLevelStrings = keyof typeof LogLevel
 
-class Logger {
-  private static currentLevel: LogLevel = Logger.getLogLevelFromEnv()
+class Logger_util {
+  private static currentLevel: LogLevel = Logger_util.getLogLevelFromEnv()
 
   private static getLogLevelFromEnv(): LogLevel {
     const envLevel = (
@@ -68,4 +68,4 @@ class Logger {
   }
 }
 
-export default Logger
+export default Logger_util

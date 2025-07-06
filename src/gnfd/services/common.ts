@@ -2,7 +2,7 @@ import { BaseAccount } from "@bnb-chain/greenfield-cosmos-types/cosmos/auth/v1be
 import { type TxResponse } from "@bnb-chain/greenfield-js-sdk"
 import type { Hex } from "viem"
 
-import Logger from "@/utils/logger"
+import Logger_util from "@/utils/logger_util.ts"
 import { response, type ApiResponse } from "../util"
 
 /**
@@ -39,18 +39,18 @@ export const executeTransaction = async <T = void>(
     })
 
     if (txRes.code === 0) {
-      Logger.debug(`${operationName} ${successDetail} success`)
+      Logger_util.debug(`${operationName} ${successDetail} success`)
       return response.success<T>(`${operationName} successful`, {
         txHash: txRes.transactionHash
       } as T)
     } else {
-      Logger.error(`${operationName} failed: ${JSON.stringify(txRes)}`)
+      Logger_util.error(`${operationName} failed: ${JSON.stringify(txRes)}`)
       return response.fail(
         `${operationName} failed: code=${txRes.code}, hash=${txRes.transactionHash}`
       ) as ApiResponse<T>
     }
   } catch (error) {
-    Logger.error(`${operationName} failed: ${error}`)
+    Logger_util.error(`${operationName} failed: ${error}`)
     return response.fail(`${operationName} failed: ${error}`) as ApiResponse<T>
   }
 }

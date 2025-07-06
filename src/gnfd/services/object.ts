@@ -16,7 +16,7 @@ import { ObjectInfo } from "@bnb-chain/greenfield-js-sdk/dist/esm/types/sp/Commo
 import { NodeAdapterReedSolomon } from "@bnb-chain/reed-solomon/node.adapter"
 import type { Hex } from "viem"
 
-import Logger from "@/utils/logger"
+import Logger_util from "@/utils/logger_util.ts"
 import { getMimeType, response, type ApiResponse } from "../util"
 import { getAccount } from "./account"
 import { createBucket } from "./bucket"
@@ -74,7 +74,7 @@ export const createFile = async (
       Uint8Array.from(fileObj.content)
     )
 
-    Logger.debug(
+    Logger_util.debug(
       `File info: ${filePath}, size: ${fileObj.size} bytes, type: ${fileObj.type}, expectCheckSums: ${expectCheckSums}`
     )
 
@@ -90,7 +90,7 @@ export const createFile = async (
     }
     const _bucketName = bucketNameRes.data!.bucketName
 
-    Logger.debug(`Using bucket: ${_bucketName}, for object: ${objectName}`)
+    Logger_util.debug(`Using bucket: ${_bucketName}, for object: ${objectName}`)
 
     // Get client and account
     const client = getClient(network)
@@ -108,7 +108,7 @@ export const createFile = async (
       expectChecksums: expectCheckSums.map((x) => bytesFromBase64(x))
     })
 
-    Logger.debug(`Created object transaction for file: ${objectName}`)
+    Logger_util.debug(`Created object transaction for file: ${objectName}`)
 
     // Execute transaction
     const txResult = await executeTransaction<void>(
@@ -137,7 +137,7 @@ export const createFile = async (
       }
     )
 
-    Logger.debug(`Upload result: ${JSON.stringify(uploadRes)}`)
+    Logger_util.debug(`Upload result: ${JSON.stringify(uploadRes)}`)
 
     if (uploadRes.code === 0) {
       return response.success({
@@ -148,7 +148,7 @@ export const createFile = async (
       return response.fail(`Create file failed: ${JSON.stringify(uploadRes)}`)
     }
   } catch (error) {
-    Logger.error(`Create file operation failed: ${error}`)
+    Logger_util.error(`Create file operation failed: ${error}`)
     return response.fail(`Create file operation failed: ${error}`)
   }
 }
@@ -221,7 +221,7 @@ export const createFolder = async (
     // If transaction failed, return the error
     return response.fail(txResult.message || "Unknown create folder error")
   } catch (error) {
-    Logger.error(`Create folder operation failed: ${error}`)
+    Logger_util.error(`Create folder operation failed: ${error}`)
     return response.fail(`Create folder operation failed: ${error}`)
   }
 }
@@ -242,7 +242,7 @@ export const getObjectInfo = async (
 
     return response.success(res.objectInfo as {} as ObjectInfo)
   } catch (error) {
-    Logger.error(`Get object info operation failed: ${error}`)
+    Logger_util.error(`Get object info operation failed: ${error}`)
     return response.fail(`Get object info operation failed: ${error}`)
   }
 }
@@ -270,7 +270,7 @@ export const deleteObject = async (
     try {
       await client.object.headObject(bucketName, objectName)
     } catch (error) {
-      Logger.error(
+      Logger_util.error(
         `Object ${objectName} does not exist in bucket ${bucketName}`
       )
       return response.fail(
@@ -296,7 +296,7 @@ export const deleteObject = async (
     // Simply return the transaction result
     return txResult
   } catch (error) {
-    Logger.error(`Delete object operation failed: ${error}`)
+    Logger_util.error(`Delete object operation failed: ${error}`)
     return response.fail(`Delete object operation failed: ${error}`)
   }
 }
@@ -320,7 +320,7 @@ export const listObjects = async (
     try {
       await client.bucket.headBucket(bucketName)
     } catch (error) {
-      Logger.error(`Bucket ${bucketName} does not exist`)
+      Logger_util.error(`Bucket ${bucketName} does not exist`)
       return response.fail(`Bucket ${bucketName} does not exist`)
     }
 
@@ -344,7 +344,7 @@ export const listObjects = async (
 
     return response.success({ objects })
   } catch (error) {
-    Logger.error(`List objects operation failed: ${error}`)
+    Logger_util.error(`List objects operation failed: ${error}`)
     return response.fail(`List objects operation failed: ${error}`)
   }
 }
@@ -366,7 +366,7 @@ export const downloadObject = async (
   try {
     let filePath = ""
     if (!targetPath || !existsSync(targetPath)) {
-      Logger.debug(
+      Logger_util.debug(
         `Target path ${targetPath} does not exist, using current directory`
       )
       // add tmp prefix to avoid file name conflict
@@ -399,7 +399,7 @@ export const downloadObject = async (
 
     return response.success({ file: filePath })
   } catch (error) {
-    Logger.error(`Download object operation failed: ${error}`)
+    Logger_util.error(`Download object operation failed: ${error}`)
     return response.fail(`Download object operation failed: ${error}`)
   }
 }

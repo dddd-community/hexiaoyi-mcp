@@ -3,7 +3,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp"
 
 import { startSSEServer } from "./server/sse"
 import { startStdioServer } from "./server/stdio"
-import logger from "./utils/logger"
+import logger from "./utils/logger_util.ts"
 
 const args = process.argv.slice(2)
 const sseMode = args.includes("--sse") || args.includes("-s")
