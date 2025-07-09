@@ -30,18 +30,6 @@ export function getOnlyTimestamp(): number {
     return timestamp;
 }
 
-export function getTimeDefaultFormat(): string {
-    let date = new Date();
-    let year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
-}
-
-
 export function isInToday(targetTimestamp: number): boolean {
     const todayDate = new Date();
     const targetDate = new Date(targetTimestamp);
