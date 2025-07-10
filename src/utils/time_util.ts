@@ -29,14 +29,3 @@ export function getOnlyTimestamp(): number {
     oldTimestamp = timestamp;
     return timestamp;
 }
-
-export function isInToday(targetTimestamp: number): boolean {
-    const todayDate = new Date();
-    const targetDate = new Date(targetTimestamp);
-
-    const isSameYear = todayDate.getFullYear() === targetDate.getFullYear();
-    const isSameMonth = todayDate.getMonth() === targetDate.getMonth();
-    const isSameDay = todayDate.getDate() === targetDate.getDate();
-
-    return isSameYear && isSameMonth && isSameDay;
-}
