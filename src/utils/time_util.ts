@@ -1,4 +1,4 @@
-let oldTimestamp = 0;
+let oldTimestamp:number = 0;
 
 export function asyncSleep(time: number) {
     return new Promise(function (resolve, reject) {
@@ -14,9 +14,8 @@ export function nextTick(callback: Function) {
     }, 0);
 }
 
-
 export function getOnlyTimestamp(): number {
-    let timestamp = new Date().getTime();
+    let timestamp:number = new Date().getTime();
     if (timestamp == oldTimestamp) {
         while (true) {
             let theTimestamp = new Date().getTime();
