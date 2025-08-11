@@ -17,7 +17,7 @@ async function main() {
   }
 
   if (!server) {
-    logger.error("failed to start server")
+    logger.error("Failed to start server")
     process.exit(1)
   }
 
