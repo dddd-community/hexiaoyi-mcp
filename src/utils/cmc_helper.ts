@@ -21,12 +21,6 @@ class CMCHelper {
     }
   }
 
-  /**
-   * 获取指定合约地址的代币价格信息
-   * @param contractAddress 合约地址
-   * @param networkId 网络ID
-   * @returns 返回代币价格信息或null
-   */
   public async getTokenPriceByContractAddress(
     contractAddress: string,
     networkId: number
