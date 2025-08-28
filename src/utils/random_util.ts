@@ -12,8 +12,8 @@ export function secureRandomFloat(inclusive: boolean = false) {
     let buffer: Buffer = randomBytes(4);
     let value: number = buffer.readUInt32BE(0);
     if (inclusive) {
-        return value / 0xFFFFFFFF; // [0,1]
+        return value / 0xFFFFFFFF;
     } else {
-        return value / 0x100000000; // [0,1)
+        return value / 0x100000000;
     }
 }
