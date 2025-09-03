@@ -17,7 +17,7 @@ async function main() {
   }
 
   if (!server) {
-    logger.error("failed to start server")
+    logger.error("failed to start mcp server")
     process.exit(1)
   }
 
